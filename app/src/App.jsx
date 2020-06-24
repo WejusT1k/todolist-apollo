@@ -45,9 +45,11 @@ function App() {
                 });
                 setVal('')
             }}>
-                <input className="form-control" value={val} type="text" placeholder="Enter todo"
-                       onChange={e => setVal(e.target.value)}></input>
-                <button className="btn btn-primary px-5 my-2" type="submit">Submit</button>
+                <input value={val} type="text"
+                       placeholder="Enter todo"
+                       onChange={e => setVal(e.target.value)}
+                />
+                <button type="submit">Submit</button>
             </form>
             <ul>
                 {data.todos.map((todo) =>
