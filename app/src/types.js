@@ -34,7 +34,8 @@ const UPDATE_TODO = gql`
   mutation UpdateTodo($id: ID) {
     todos:updateTodo(id: $id){
         completed,
-        id
+        id,
+        title
     }
   }
 `;
